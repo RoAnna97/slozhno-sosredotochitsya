@@ -1,4 +1,16 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --text-font: "IBM Plex Mono";
+  --main-text-color: #F1B2CE;
+  --main-text-size: 18px;
+  --main-text-weight: 400;
+  --main-text-lh: 23.4px;
+  --title-text-color: #FF0070;
+  --title-text-size: 18px;
+  --title-text-weight: 700;
+  --title-text-lh: 23.4px;
+  --subtitle-text-color: #000028;
+  --subtitle-text-size: 18px;
+  --subtitle-text-weight: 700;
+  --subtitle-text-lh: 23.4px;
+  --background-color: #000028;
+}
