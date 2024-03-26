@@ -10,10 +10,12 @@
   grid-template-rows: repeat(3, 1fr);
   background-color: var(--background-color);
   background-image: url(/images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__theme-menu {
-  grid-row: 1 2;
+  grid-row: 1;
   justify-self: end;
   align-self: center;
   display: flex;
@@ -46,4 +48,25 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
+}
+
+h1 {
+  grid-row: 2;
+  font-family: var(--text-font);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
+  color: #db00ff;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.title-decor {
+  grid-row: 3;
+  display: flex;
+  justify-content: flex-start;
+	align-items: center;
+  height: fit-content;
+  background-color: var(--accent-color);
+  font: var(--title);
+  color: var(--background-color);
 }
