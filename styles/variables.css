@@ -12,7 +12,7 @@
   --theme-menu-text-size: 18px;
   --theme-menu-text-weight: 400;
   --theme-menu-text-line-height: 18px;
-  --theme-menu: var(--text-font) var(--theme-menu-text-size) var(--theme-menu-text-weight) var(--theme-menu-text-line-height);
-  --title: var(--text-font) var(--title-text-size) var(--title-text-weight) var(--title-text-line-height);
-  --main: var(--text-font) var(--main-text-size) var(--main-text-weight) var(--main-text-line-height);
+  --theme-menu: var(--theme-menu-text-weight) var(--theme-menu-text-size)/var(--theme-menu-text-line-height) var(--text-font);
+  --title: var(--title-text-weight) var(--title-text-size)/var(--title-text-line-height) var(--text-font);
+  --main:  var(--main-text-weight) var(--main-text-size)/var(--main-text-line-height) var(--text-font);
 }
