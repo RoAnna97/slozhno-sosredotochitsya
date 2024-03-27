@@ -1,5 +1,9 @@
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url(/images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  background-color: var(--background-color);
 }
 
 .header {
@@ -8,16 +12,62 @@
   width: 100dvw;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  background-color: var(--background-color);
   background-image: url(/images/cover-image-dark.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.REC {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  position: absolute;
+  top: 18px;
+  right: 19px;
+}
+
+.REC::before {
+  position: absolute;
+  right: 20px;
+  top: -4.5px;
+  width: 33px;
+  height: 26px;
+  content: "REC";
+  font: var(--theme-menu);
+  color: var(--accent-color);
 }
 
 .header__theme-menu {
   grid-row: 1;
   justify-self: end;
   align-self: center;
+}
+
+.header__theme-menu-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,6 +82,7 @@
   border: none;
   text-transform: lowercase;
   width: 70px;
+  height: 26px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,8 +120,48 @@ h1 {
   display: flex;
   justify-content: flex-start;
 	align-items: center;
+  width: 100%;
   height: fit-content;
   background-color: var(--accent-color);
   font: var(--title);
   color: var(--background-color);
+}
+
+.main {
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main__section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__section-title {
+  font: var(--title);
+  color: var(--accent-color);
+}
+
+.main__section-subtitle {
+  display: flex;
+  justify-content: flex-start;
+	align-items: center;
+  height: fit-content;
+  background-color: var(--accent-color);
+  font: var(--main);
+  color: var(--background-color);
+}
+
+.main__text {
+  font: var(--main);
+  color: var(--main-color);
 }
