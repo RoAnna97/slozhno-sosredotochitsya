@@ -1,12 +1,47 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root.theme-light {
+  /* color-scheme: light; */
+  --main-color: rgb(53, 52, 48);
+  --accent-color: rgb(255, 141, 203);
+  --background-color: rgb(53, 52, 48);   
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-image: url(/images/cover-image-light.png);
+  background-color: rgb(255, 194, 230);
+}
+
+
+h1 {
+  color: rgb(255, 194, 230);
+  text-shadow: 4px 4px var(--accent-color);
+}
+
+@media (1024px <= width) {
+  h1 {
+    text-shadow: 4px 4px rgb(255, 0, 112);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-color: rgb(53, 52, 48);
+    --accent-color: rgb(255, 141, 203);
+    --background-color: rgb(53, 52, 48);      
+  }
+}
+
+.page.theme_light {
+  background-image: url(/images/cover-image-light.png);
+  background-color: rgb(255, 194, 230);
+}
+
+h1 {
+  color: rgb(255, 194, 230);
+  text-shadow: 4px 4px var(--accent-color);
+}
+
+@media (1024px <= width) {
+  h1 {
+    text-shadow: 4px 4px rgb(255, 0, 112);
+  }
 }

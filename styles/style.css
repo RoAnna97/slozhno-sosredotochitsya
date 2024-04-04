@@ -142,6 +142,10 @@
   }
 }
 
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
