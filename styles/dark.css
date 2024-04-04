@@ -1,9 +1,9 @@
-:root.theme-dark {
+:root:has(.theme_dark) {
   --main-color: rgb(241, 178, 206);
   --accent-color: rgb(255, 0, 112);
   --background-color: rgb(0, 0, 40);
+  --header-color: #db00ff;
 }
 
 .page.theme_dark {
-  
 }
