@@ -7,7 +7,7 @@
 }
 
 .page.theme_light {
-  background-image: url(/images/cover-image-light.png);
+  background-image: url(../images/cover-image-light.png);
   background-color: rgb(255, 194, 230);
 }
 
@@ -50,7 +50,7 @@ h1 {
   }
 
   .page.theme_light {
-    background-image: url(/images/cover-image-light.png);
+    background-image: url(../images/cover-image-light.png);
     background-color: rgb(255, 194, 230);
   }
 
