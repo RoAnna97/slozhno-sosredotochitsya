@@ -256,7 +256,7 @@ h1 {
   height: fit-content;
   background-color: var(--accent-color);
   font: var(--main);
-  color: var(--title-color);
+  color: var(--subtitle-color);
 }
 
 .main__text {
