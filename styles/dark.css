@@ -1,9 +1,14 @@
 :root:has(.theme_dark) {
-  --main-color: rgb(241, 178, 206);
-  --accent-color: rgb(255, 0, 112);
-  --background-color: rgb(0, 0, 40);
-  --header-color: #db00ff;
+  --decor-color: var(--neon-pink);
+  --hover-color: rgba(255, 0, 112, 0.4);
+  --header-color: var(--purple);
+  --accent-color: var(--neon-pink);
+  --title-color: var(--neon-pink);
+  --subtitle-color: var(--blue);
+  --text-color: var(--light-pink);
+  --background-color: var(--blue);
 }
 
 .page.theme_dark {
+  background-image: url(/images/cover-image-dark.png);
 }

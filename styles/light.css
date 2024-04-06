@@ -1,23 +1,19 @@
 :root:has(.theme_light) {
-  /* color-scheme: light; */
-  --main-color: rgb(53, 52, 48);
-  --accent-color: rgb(255, 141, 203);
-  --background-color: rgb(53, 52, 48);   
-  --header-color:  rgb(255, 194, 230);
+  --decor-color: var(--grey);
+  --hover-color: rgba(53, 52, 48, 0.4);
+  --header-color: var(--pink);
+  --accent-color: var(--dark-pink);
+  --title-color: var(--grey);
+  --subtitle-color: var(--grey);
+  --text-color: var(--grey);
+  --background-color: var(--white-pink);
 }
 
 .page.theme_light {
   background-image: url(/images/cover-image-light.png);
-  background-color: rgb(255, 194, 230);
 }
 
-
-h1 {
-  color: var(--header-color);
-  text-shadow: 4px 4px var(--accent-color);
-}
-
-.REC {
+.theme_light .REC {
   visibility: hidden;
 }
 
@@ -27,59 +23,41 @@ h1 {
   }
 }
 
-.decorated-zone::before {
-  border-top: 1px solid var(--main-color);
-  border-right: 1px solid var(--main-color);
+@media (1024px <= width) {
+  .footer__title {
+    text-shadow: 2px 2px rgb(255, 0, 112);
+  }
 }
-
-.decorated-zone::after {
-  border-bottom: 1px solid var(--main-color);
-  border-left: 1px solid var(--main-color);
-}
-
-.header__theme-menu-list {
-  color: var(--main-color);
-}
-
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-color: rgb(53, 52, 48);
-    --accent-color: rgb(255, 141, 203);
-    --background-color: rgb(53, 52, 48);      
+    --decor-color: var(--grey);
+    --hover-color: rgba(53, 52, 48, 0.4);
+    --header-color: var(--pink);
+    --accent-color: var(--dark-pink);
+    --title-color: var(--grey);
+    --subtitle-color: var(--grey);
+    --text-color: var(--grey);
+    --background-color: var(--white-pink);
   }
-
-  .page.theme_light {
+  
+  .page {
     background-image: url(/images/cover-image-light.png);
-    background-color: rgb(255, 194, 230);
   }
-
-  h1 {
-    color: rgb(255, 194, 230);
-    text-shadow: 4px 4px var(--accent-color);
+  
+  .REC {
+    visibility: hidden;
   }
-
+  
   @media (1024px <= width) {
     h1 {
       text-shadow: 4px 4px rgb(255, 0, 112);
     }
   }
-
-  .REC {
-    visibility: hidden;
-  }
-
-  .decorated-zone::before {
-    border-top: 1px solid var(--main-color);
-    border-right: 1px solid var(--main-color);
-  }
-
-  .decorated-zone::after {
-    border-bottom: 1px solid var(--main-color);
-    border-left: 1px solid var(--main-color);
-  }
-
-  .header__theme-menu-list {
-    color: var(--main-color);
+  
+  @media (1024px <= width) {
+    .footer__title {
+      text-shadow: 2px 2px rgb(255, 0, 112);
+    }
   }
 }
